@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lt123456.github.io/"/>
-  <updated>2016-09-22T06:48:55.984Z</updated>
+  <updated>2016-10-21T08:22:46.765Z</updated>
   <id>https://lt123456.github.io/</id>
   
   <author>
@@ -16,35 +16,84 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>博客搭建</title>
-    <link href="https://lt123456.github.io/2016/09/21/hello-world/"/>
-    <id>https://lt123456.github.io/2016/09/21/hello-world/</id>
-    <published>2016-09-21T03:49:02.987Z</published>
-    <updated>2016-09-22T06:48:55.984Z</updated>
+    <title>git的使用</title>
+    <link href="https://lt123456.github.io/2015/12/21/hello-world/"/>
+    <id>https://lt123456.github.io/2015/12/21/hello-world/</id>
+    <published>2015-12-21T12:36:21.000Z</published>
+    <updated>2016-10-21T08:22:46.765Z</updated>
     
-    <content type="html"><![CDATA[<p><excerpt in="" index=""> </excerpt></p>
+    <content type="html"><![CDATA[<p>Git是什么？<br>Git是目前世界上先进的分布式版本控制系统。这里我将带你认识git,怎么用git来管理项目.</p>
+<p><excerpt in="" index=""> </excerpt></p>
 <ul>
-<li><a id="more"></a>
-<the rest="" of="" contents文=""><br>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</the></li>
+<li><a id="more"></a>  
+<the rest="" of="" contents文="">  
+
+</the></li>
 </ul>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h2 id="Git-Start"><a href="#Git-Start" class="headerlink" title="Git Start"></a>Git Start</h2><h3 id="什么是git"><a href="#什么是git" class="headerlink" title="什么是git?"></a>什么是git?</h3><ol>
+<li><p>在谈git之前我简单介绍之前我用的SVN. </p>
+<p>版本控制器,SVN它是分客户端和服务器端,一般小团队一台主机作为服务器端(主干),其他人就是从 主干上check out 下代码, 然后 开发, 提交 更新 , 合并, 常用的操作:</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">    Svn checkout  检出 代码</div><div class="line">    </div><div class="line">    Svn update   更新主干(中央版本库的代码)</div><div class="line">    </div><div class="line">    Svn commit   提交自己的代码</div><div class="line">``` </div><div class="line">一般window 都有方便的图形界面具体的你可以去[SVN官网](https://tortoisesvn.net/)查看</div><div class="line"></div><div class="line">2.  Git</div><div class="line"> </div><div class="line"> 相对Svn 就没有所谓的中央版本库,它采用改的分布式版本控制系统,开发者除了本地有一套完整的代码,实际上都有一个远程的分支 与之对应,用来代码的提交 和 版本的控制,相对Svn来说 更加方便</div><div class="line"></div><div class="line">3. 谈谈两者的区别. </div><div class="line"></div><div class="line">  Svn 对于网络的依赖性太大,链接不到中央版本库,就没法 更新, 提交 代码.</div><div class="line">  </div><div class="line">  Git 提交代码, 它会 Git commit 提交到本地(细心的会发现项目根目录的git文件),可以随时查看修改的历史, 当有网络时,就可以迅速 git push 到 你的远程分支.</div><div class="line">  </div><div class="line">  </div><div class="line">  谈到这里是否想迅速深入 git , 别着急 , 我们将一步一步带你认识Git</div><div class="line">  </div><div class="line">### 安装 git</div><div class="line"></div><div class="line">git的安装,在网上会有很多教程,这里我还是大概的谈论一下</div><div class="line"></div><div class="line">1. linux   install</div><div class="line"></div><div class="line">``` </div><div class="line">        sudo apt-get install git  # 跑完命令基本git安装完毕(ubuntu)</div></pre></td></tr></table></figure>
+<ol>
+<li><p>window install </p>
+<p>绝对的傻瓜方式的安装 去下载<a href="https://git-for-windows.github.io/" target="_blank" rel="external">git镜像</a>,然后 next-next 知道安装 结束,</p>
+</li>
+</ol>
+<h3 id="local-push-orign"><a href="#local-push-orign" class="headerlink" title="local  push orign"></a>local  push orign</h3><ol>
+<li>去 github 上申请账号, 然后 create new repository, 加上描述, 这样一个git 远程仓库 ok </li>
+<li>本地有个 dreamspark的项目 想 托管到 git 怎么办?  不着急, 用你安装的git工具 执行命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init  #实质：你的项目目录下初始化一个repository，执行成功后，会在你的目录下生成一个.git的隐藏文件。</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>如果你时 windows 服务器，那就更加简单了, 直接右键-&gt; Git init 即可</p>
+<p>3.执行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git  add . #表示把该目录下的所有文件加入到本地暂存区中。执行成功后不会有任何提示：</div></pre></td></tr></table></figure></p>
+<p>这一步没提示，==没提示==</p>
+<ol>
+<li><p>查看你是否有更新</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git  status #该命令会把你本地工作区和暂存区的版本进行比较，查看当前的状态。我下面的状态是已经把所有文件加入到了暂存区中，但是还没有提交到本地历史区</div></pre></td></tr></table></figure>
+<p>介绍的有点啰嗦， 也就是产看你修改，添加的文件。</p>
+<p>5.添加一个注释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -a -m &apos;dreamspark 2015 init&apos;; #该命令会把本地暂存区中的文件提交到本地历史区，注意只有在本地历史区中的内容才能提交到github。执行该命令后，我们所有的文件都只是在本地。没有github任何关系。</div></pre></td></tr></table></figure>
+<ol>
+<li>关联远程 分支。<br>现在已经将我们的 项目 添加 到 本地历史区， 可是怎么和刚才建立的远程仓库关联,这个问题问的好, 去git 复制 你刚创建的 仓库地址,<a href="https://github.com/lt123456/lt123456.github.io.git" target="_blank" rel="external">dreamspark</a></li>
+</ol>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add origin https://github.com/lt123456/lt123456.github.io.git #该命令是把本地历史区中的文件添加到github服务器的暂存区中。这一步是本地和远程服务器建立联系的重要一步。</div></pre></td></tr></table></figure>
+<p>执行成功后没有反馈, </p>
+<ol>
+<li>提交代码<br>终于迎来激动人心的好时刻</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git  push origin dreamspark #提交到git</div></pre></td></tr></table></figure>
+<p>到这里你如果是初学者, 基本已经可以创建远程分支关联本地了</p>
+<h3 id="常用的git-命令"><a href="#常用的git-命令" class="headerlink" title="常用的git 命令"></a>常用的git 命令</h3><p>普及一下我个人感觉常用的 git 命令</p>
+<ol>
+<li><p>git config</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;xxx&quot;  # 配置用户名，上传本地 repository 到服务器上的时候，在 Github 上会显示这里配置的上传者信息</div><div class="line">git config --global user.email &quot;xxx&quot;     ##配置邮箱</div></pre></td></tr></table></figure>
+</li>
+<li><p>分支相关</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">1. git branch -b name:  #创建分支</div><div class="line">  </div><div class="line">2. git checkout 分支名  # 切换 分支</div><div class="line">  </div><div class="line">3. git push  origin 本地分支: 远程分支  # 本地分支提交到远程分支</div><div class="line">  </div><div class="line">4.  git  push origin  --delete [branch-name] #删除远程分支</div><div class="line"></div><div class="line">５. git clone -b +分支 +路径   # 克隆远程分支</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>3.常用的总结</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git pull origin master --从远程仓库同步代码到本地</div><div class="line"></div><div class="line">git add .  -- 添加所有修改文件</div><div class="line"></div><div class="line">git commit -a -m &quot;注释&quot;  -- 注释</div><div class="line"></div><div class="line">git push origin master  -- 提交分支</div></pre></td></tr></table></figure>
+<p>到这里你应该可以初步认识 git了.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;Excerpt in index&gt; &lt;/p&gt;
+      &lt;p&gt;Git是什么？&lt;br&gt;Git是目前世界上先进的分布式版本控制系统。这里我将带你认识git,怎么用git来管理项目.&lt;/p&gt;
+&lt;p&gt;&lt;Excerpt in index&gt; &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
     
     </summary>
     
+    
+      <category term="git 安装" scheme="https://lt123456.github.io/tags/git-%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="git 使用" scheme="https://lt123456.github.io/tags/git-%E4%BD%BF%E7%94%A8/"/>
     
   </entry>
   
