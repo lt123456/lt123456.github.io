@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lt123456.github.io/"/>
-  <updated>2016-10-21T08:22:46.765Z</updated>
+  <updated>2016-10-21T08:30:53.991Z</updated>
   <id>https://lt123456.github.io/</id>
   
   <author>
@@ -17,12 +17,12 @@
   
   <entry>
     <title>git的使用</title>
-    <link href="https://lt123456.github.io/2015/12/21/hello-world/"/>
-    <id>https://lt123456.github.io/2015/12/21/hello-world/</id>
+    <link href="https://lt123456.github.io/2015/12/21/git/"/>
+    <id>https://lt123456.github.io/2015/12/21/git/</id>
     <published>2015-12-21T12:36:21.000Z</published>
-    <updated>2016-10-21T08:22:46.765Z</updated>
+    <updated>2016-10-21T08:30:53.991Z</updated>
     
-    <content type="html"><![CDATA[<p>Git是什么？<br>Git是目前世界上先进的分布式版本控制系统。这里我将带你认识git,怎么用git来管理项目.</p>
+    <content type="html"><![CDATA[<p>Git是什么？<br>Git是目前世界上先进的分布式版本控制系统。<br>这里我将带你认识git,怎么用git来管理项目.</p>
 <p><excerpt in="" index=""> </excerpt></p>
 <ul>
 <li><a id="more"></a>  
@@ -83,7 +83,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;Git是什么？&lt;br&gt;Git是目前世界上先进的分布式版本控制系统。这里我将带你认识git,怎么用git来管理项目.&lt;/p&gt;
+      &lt;p&gt;Git是什么？&lt;br&gt;Git是目前世界上先进的分布式版本控制系统。&lt;br&gt;这里我将带你认识git,怎么用git来管理项目.&lt;/p&gt;
 &lt;p&gt;&lt;Excerpt in index&gt; &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
